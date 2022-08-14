@@ -69,8 +69,6 @@
 			isa = PBXGroup;
 			children = (
 				E307519128A91BDC00AF3DB7 /* ViewController */,
-				E307519028A91BC700AF3DB7 /* collectionViewCell */,
-				E307518F28A91BBB00AF3DB7 /* tableviewcell */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -83,20 +81,6 @@
 				E3DE473728A81DCF00C43CF4 /* SceneDelegate.swift */,
 			);
 			path = Utilities;
-			sourceTree = "<group>";
-		};
-		E307518F28A91BBB00AF3DB7 /* tableviewcell */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = tableviewcell;
-			sourceTree = "<group>";
-		};
-		E307519028A91BC700AF3DB7 /* collectionViewCell */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = collectionViewCell;
 			sourceTree = "<group>";
 		};
 		E307519128A91BDC00AF3DB7 /* ViewController */ = {
