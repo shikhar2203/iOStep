@@ -15,9 +15,12 @@ enum responseError{
 class PeopleHandler:NSObject{
     static let sharedInstance = PeopleHandler()
     
-    private var url = Constants.peopleUrl
+    private var urlfr = Constants.peopleUrl
+    var isPaging = false
 
-    func getinfo(completion: @escaping ((getPeople,responseError) -> ())){
+    func getinfo(page:Int,completion: @escaping ((getPeople,responseError) -> ())){
+        let url = urlfr+"\(page)"
+        
         var request = URLRequest(url: URL(string: url)!,timeoutInterval: Double.infinity)
         request.httpMethod = "GET"
 
@@ -32,7 +35,7 @@ class PeopleHandler:NSObject{
                 let decoder = JSONDecoder()
                 let APIResponse = try decoder.decode(getPeople.self, from: data)
                 completion(APIResponse,.success)
-                print(APIResponse.count)
+                //print(APIResponse.count)
 
             }catch{
                 completion(getPeople(count: 0, next: "", previous: "", results: []),.processingFailed)
@@ -79,9 +82,12 @@ class FilmsHandler:NSObject{
 class PlanetsHandler:NSObject{
     static let sharedInstance = PlanetsHandler()
     
-    private var url = Constants.planetsUrl
+    private var urlfr = Constants.planetsUrl
 
-    func getinfo(completion: @escaping ((getPlanets,responseError) -> ())){
+    func getinfo(page:Int, completion: @escaping ((getPlanets,responseError) -> ())){
+        
+        let url = urlfr+"\(page)"
+        
         var request = URLRequest(url: URL(string: url)!,timeoutInterval: Double.infinity)
         request.httpMethod = "GET"
 
