@@ -5,7 +5,7 @@
 //  Created by shikhar on 14/08/22.
 //
 
-import Foundation
+import UIKit
 
 struct people:Codable{
     let name : String
@@ -82,3 +82,15 @@ struct getPlanets:Codable{
     let previous: String?
     let results:[planets]
 }
+
+struct peopleHandle:Codable{
+    let count:Int
+    let next:String?
+    let previous:String?
+    let results:[people]
+}
+
+
+
+
+

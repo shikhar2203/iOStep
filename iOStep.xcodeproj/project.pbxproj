@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6B2F583328AC0FF8009ACF23 /* PeopleTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B2F583228AC0FF8009ACF23 /* PeopleTableViewCell.swift */; };
+		6B2F583528AC13D5009ACF23 /* PlanetTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B2F583428AC13D5009ACF23 /* PlanetTableViewCell.swift */; };
 		E307518A28A90E9F00AF3DB7 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = E307518928A90E9F00AF3DB7 /* Model.swift */; };
 		E307518C28A90EBC00AF3DB7 /* Handler.swift in Sources */ = {isa = PBXBuildFile; fileRef = E307518B28A90EBC00AF3DB7 /* Handler.swift */; };
 		E307518E28A9154900AF3DB7 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = E307518D28A9154900AF3DB7 /* Constants.swift */; };
@@ -21,6 +23,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		6B2F583228AC0FF8009ACF23 /* PeopleTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeopleTableViewCell.swift; sourceTree = "<group>"; };
+		6B2F583428AC13D5009ACF23 /* PlanetTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlanetTableViewCell.swift; sourceTree = "<group>"; };
 		E307518928A90E9F00AF3DB7 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
 		E307518B28A90EBC00AF3DB7 /* Handler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Handler.swift; sourceTree = "<group>"; };
 		E307518D28A9154900AF3DB7 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
@@ -69,6 +73,8 @@
 			isa = PBXGroup;
 			children = (
 				E307519128A91BDC00AF3DB7 /* ViewController */,
+				6B2F583228AC0FF8009ACF23 /* PeopleTableViewCell.swift */,
+				6B2F583428AC13D5009ACF23 /* PlanetTableViewCell.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -195,12 +201,14 @@
 			files = (
 				E3DC0B3B28A9303100F767D6 /* FilmsViewController.swift in Sources */,
 				E3DE473628A81DCF00C43CF4 /* AppDelegate.swift in Sources */,
+				6B2F583328AC0FF8009ACF23 /* PeopleTableViewCell.swift in Sources */,
 				E3DE473828A81DCF00C43CF4 /* SceneDelegate.swift in Sources */,
 				E307518C28A90EBC00AF3DB7 /* Handler.swift in Sources */,
 				E3DC0B3D28A9304D00F767D6 /* PlanetsViewController.swift in Sources */,
 				E307518A28A90E9F00AF3DB7 /* Model.swift in Sources */,
 				E307518E28A9154900AF3DB7 /* Constants.swift in Sources */,
 				E3DC0B3928A9301A00F767D6 /* PeopleViewController.swift in Sources */,
+				6B2F583528AC13D5009ACF23 /* PlanetTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
