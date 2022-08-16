@@ -8,8 +8,8 @@
 import Foundation
 
 class Constants{
-    static let peopleUrl = "https://swapi.dev/api/people"
+    static let peopleUrl = "https://swapi.dev/api/people/?page="
     static let filmsUrl = "https://swapi.dev/api/films"
-    static let planetsUrl = "https://swapi.dev/api/planets"
+    static let planetsUrl = "https://swapi.dev/api/planets/?page="
     
 }
