@@ -5,7 +5,7 @@
 //  Created by shikhar on 14/08/22.
 //
 
-import Foundation
+import UIKit
 
 class Constants{
     static let peopleUrl = "https://swapi.dev/api/people/?page="
