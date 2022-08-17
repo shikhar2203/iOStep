@@ -17,9 +17,12 @@ class PeopleHandler:NSObject{
     private var urlfr = Constants.peopleUrl
     var isPaging = false
     
+
       
 
     func getinfo(page:Int ,completion: @escaping ((getPeople,responseError) -> ())){
+
+    
         let url = urlfr+"\(page)"
         
         var request = URLRequest(url: URL(string: url)!,timeoutInterval: Double.infinity)
@@ -35,8 +38,10 @@ class PeopleHandler:NSObject{
             do{
                 let decoder = JSONDecoder()
                 let APIResponse = try decoder.decode(getPeople.self, from: data)
-                completion(APIResponse, .success)
-                print(APIResponse.count)
+
+                completion(APIResponse,.success)
+                //print(APIResponse.count)
+
 
             }catch{
                 completion(getPeople(count: 0, next: "", previous: "", results: []),.processingFailed)
@@ -85,8 +90,13 @@ class PlanetsHandler:NSObject{
     
     private var urlfr = Constants.planetsUrl
 
-    func getinfo(page: Int, completion: @escaping ((getPlanets,responseError) -> ())){
+
+    
+    func getinfo(page:Int, completion: @escaping ((getPlanets,responseError) -> ())){
+        
         let url = urlfr+"\(page)"
+        
+
         var request = URLRequest(url: URL(string: url)!,timeoutInterval: Double.infinity)
         request.httpMethod = "GET"
 
